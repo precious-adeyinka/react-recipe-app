@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
+
+.title {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Baloo 2', cursive;
+  mix-blend-mode: overlay;
+}
+.preloader {
+  min-height: 100vh;
+  width: 100%;
+  background: #f45;
+  background:  rgb(26, 173, 92);
+  background: #050c3aed;
+  overflow: hidden;
+  z-index: 10000;
+  transition: all 500ms linear;
+}
+.preloader.hide {
+  animation: scaleup 500ms 0.5s linear forwards;
+}
+@keyframes scaleup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(20);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+.bubble {
+  width: 50px;
+  display: flex;
+  animation: bubble 7s linear infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  70% {
+    opacity: 1;
+  }
+  100% {
+   transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+.bubble:nth-child(1) {
+  animation-delay: 1s;
+  width: 25px!important;
+}
+.bubble:nth-child(2) {
+  animation-delay: 3s;
+}
+.bubble:nth-child(3) {
+  animation-delay: 2s;
+  width: 25px!important;
+}
+.bubble:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.bubble:nth-child(5) {
+  animation-delay: 3s;
+}
+.bubble:nth-child(6) {
+  animation-delay: 6s;
+  width: 25px!important;
+}
+.bubble:nth-child(7) {
+  animation-delay: 7s;
+  width: 35px!important;
+}

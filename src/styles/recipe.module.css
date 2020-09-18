@@ -1,0 +1,57 @@
+.recipe {
+  max-height: 50px;
+  max-width: 33.33%;
+  margin: 1rem 1.55rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  position: relative; 
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  ); 
+  background: #fff;
+  transition: all 500ms ease;
+}
+.recipe:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  position: absolute;
+  top: -7px;
+  left: -50px;
+}
+
+.title {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #333;
+  margin: 0;
+}
+
+.calories {
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #333;
+  margin: 0;
+}

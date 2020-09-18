@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.main {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.layout {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  border: 2px solid #fff;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.social {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg) translateY(-50%);
+  position: absolute;
+  top: 70%;
+  left: -100%;
+}
+.socialLink {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.col5 {
+  height: 100%;
+  width: 5%;
+  background:#050c3aed;
+  position: relative;
+}
+.col50 {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(rgb(22 29 71 / 75%), rgb(22 29 71 / 75%)), url(../images/banana-dish.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.col50 .wrapper {
+  height: 100%;
+  width: 100%;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(22 29 71 / 75%), rgb(22 29 71 / 75%)), url(../images/banana-dish.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+}
+.content p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ccc;
+  line-height: 1.7;
+  width: 70%;
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #5a5f8d;
+}
+.title {
+  font-size: 5.7rem;
+  font-family: 'Archivo Black', sans-serif;
+  position: fixed;
+  top: 15%;
+  margin-left: 1em;
+  color: #fff;
+}
+
+.explore {
+  height: 70px;
+  width: 55%;
+  background:#101964;
+  position: fixed;
+  left: 5%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+.explore span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+}
+.explore span::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: -100%;
+}
+.exploreBtns {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.exploreBtns i {
+  color: #fff;
+  font-size: 40px;
+  margin: 5px 1rem;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+.exploreBtns i:hover {
+  background: rgba(255,255,255,0.20);
+}
+.col45 {
+  height: 100%;
+  width: 45%;
+  background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url(../images/dishes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  filter: saturate(90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play {
+  background: #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.play::after {
+  content: "";
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: rgba(255,255,255,0.50);
+  animation: fade 0.5s 0.5s ease-in-out infinite alternate-reverse;
+  z-index: -1;
+}
+@keyframes fade {
+  from {
+    transform: scale(1);
+    background: rgba(255,255,255,0.10);
+  }
+  to {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.50);
+  }
+}
+.play i {
+  color: #050c3aed;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+/* 
+** NAV
+*/
+.nav {
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav i {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.navLinks {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navLink {
+  margin: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+}
