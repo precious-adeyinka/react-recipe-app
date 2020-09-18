@@ -43,7 +43,7 @@ const Home = () => {
         <span>Explore Our Recipes</span>
         <div className={style.exploreBtns}>
           <i className="fi-xnslxl-chevron-solid"></i>
-          <i class="fi-xnsrxl-chevron-solid"></i>
+          <i className="fi-xnsrxl-chevron-solid"></i>
           {/* <i className="fa fa-angle-left"></i> */}
           {/* <i className="fa fa-angle-right"></i> */}
         </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
       </ul>
 
       {/* <i className="fa fa-search"></i> */}
-      <i class="fi-xnluhl-magnifying-glass"></i>
+      <i className="fi-xnluhl-magnifying-glass"></i>
     </nav>
   );
 };
